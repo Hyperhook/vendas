@@ -1,0 +1,123 @@
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TISafeVendas</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Categoria
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Futebol</a>
+				<a class="dropdown-item" href="#">Basquete</a>
+				<a class="dropdown-item" href="#">Volei</a>
+				<a class="dropdown-item" href="#">Tenis</a>
+				<div class="dropdown-divider"></div>
+			</div>
+		</li>
+		</ul>
+	</div>
+	</nav>
+	
+	<div class="container">
+<div id="accordion">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center">
+                <h3>Cadastro do Cliente</h3>
+            </div>
+        </div>
+    </div>
+		
+	<div class="card card-default">
+        <div class="card-header">
+            <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    <i class="glyphicon glyphicon-search text-gold"></i>
+                    <b>INFORMACOES</b>
+                </a>
+            </h4>
+        </div>	
+<form>
+<div id="collapse1" class="collapse show">
+            <div class="card-body">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+	<div class="col-md-3 mb-3">
+      <label for="validationDefault03">CEP</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="CEP" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">City</label>
+      <input type="text" class="form-control" id="validationDefault04" placeholder="City" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">State</label>
+      <input type="text" class="form-control" id="validationDefault05" placeholder="State" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault06">CPF</label>
+      <input type="text" class="form-control" id="validationDefault06" placeholder="CPF" required>
+    </div>
+  </div>
+  
+  <div class="form-row">
+	<div class="col-md-6 mb-3">
+		<label for="validationDefault07">Password</label>
+		<input type="password" class="form-control" id="validationDefault07" placeholder="Password" required>
+	</div>
+	<div class="col-md-6 mb-3">
+		<label for="validationDefault08">PasswordConfirm</label>
+		<input type="password" class="form-control" id="validationDefault08" placeholder="Password" required>
+	</div>
+  </div>
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-success" type="submit">Cadastrar</button>
+  <button class="btn btn-danger" type="submit">Voltar</button>
+  </div>
+  </div>
+  </div>
+</form>
+	
+</body>
+</html>
